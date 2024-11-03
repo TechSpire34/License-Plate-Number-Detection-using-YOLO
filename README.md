@@ -4,6 +4,17 @@ A project where the license plate number is extracted from image of a vehicle us
 ## Introduction
 Automatic license plate detection has the ability to automatically identify the vehicle by capturing and recognizing the number plates of any vehicle with the help of an image, provided by video surveillance cameras.It has many practical applications like noting vehicle numbers at toll gate operation, tracing cars, finding stolen cars from CCTVs, etc.
 
+## Demo
+<center> <img src = "https://github.com/sandipanrakshit34/License-Plate-Number-Detection-using-YOLO/blob/main/ezgif-6-f2ffdc0e81.gif" width = 100%>
+
+## Data
+
+## Author
+
+- [@sandipanrakshit34](https://github.com/sandipanrakshit34)
+
+##
+
 ## Approach
 To predict the license plate number, the following things need to be done:
 1. The license plate needs to be detected from the overall image. This can be done using object detection methods like finding contours, using You-Only-Look-Once (YOLO), etc.
@@ -125,8 +136,7 @@ In this, the angle of rotation is found by finding the sin of theta, from which 
 
 #### 2. Plate detection using YOLOv3
 We trained YOLOv3 on custom dataset for detection of license plate as mentioned in the 'Dataset' section.
-For this, darknet was installed and set up in the system. Using YOLOv3 config files, we trained our dataset on Git which returned ‘plates.weights’ file containing the weights obtained after training. The .weights file is then imported in the program and used to detect plates. The repository for installing and using darknet can be found here https://github.com/pjreddie/darknet.
-Due to constraints on size of file on github, we uploaded the ```lapi.weights``` file along with ```classes.names``` and ```darknet-yolov3.cfg``` files on the following link: https://drive.google.com/file/d/1cktcL1TXXRJ5o6CxzIuR08hPEWbb8Kkx/view?usp=sharing
+For this, darknet was installed and set up in the system. Using YOLOv3 config files, we trained our dataset on Git which returned ‘plates.weights’ file containing the weights obtained after training. The .weights file is then imported in the program and used to detect plates.
 
 Initially, import all the necessary files and set up the model in the following way:
 ```
